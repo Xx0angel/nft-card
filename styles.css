@@ -1,5 +1,149 @@
+
+/* Global settings */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Vars */
+/* Colors */
+:root{
+    /* Primary */
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    /* Neutral */
+    
+    --Very-dark-blue-bg: hsl(217, 54%, 11%); /* (main BG) */
+    --Very-dark-blue-card: hsl(216, 50%, 16%); /* (card BG) */
+    --Very-dark-blue-line: hsl(215, 32%, 27%); /* (line) */
+    --White: hsl(0, 0%, 100%);
+}
+
+/* Text */
+
+.format__txt{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px; /* paragraph */
+    /* Weights: 300, 400, 600 */
+}
+
+/* ## Layout */
+
+/* The designs were created to the following widths: */
+
+/* - Mobile: 375px */
+/* - Desktop: 1440px */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue-bg);
+    min-height: 100vh;
+}
+
+.nft-card{
+    background-color: var(--Very-dark-blue-card);
+    width: 25%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.nft-image{
+    width: 100%;
+    padding: 20px;
+}
+
+.nft-image img{
+    width: 100%;
+    border-radius: 10   px;
+    -webkit-border-radius: 10   px;
+    -moz-border-radius: 10   px;
+    -ms-border-radius: 10   px;
+    -o-border-radius: 10   px;
+}
+
+.nft-description{
+    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+.nft-description h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: var(--White);
+}
+
+.nft-description > p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    color: var(--Soft-blue);
+}
+.nft-price{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.nft-price-1{
+    display: flex;
+    align-items: center;
+}
+.nft-price-1 img{
+    margin: 5px;
+}
+.nft-price-1 p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.nft-price-1:nth-child(1){
+    color: var(--Cyan);
+}
+.nft-price-1:nth-child(2){
+    color: var(--Soft-blue)
+}
+
+.nft-creator{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+.nft-avatar{
+    width: auto;
+    margin-right: 15px;
+}
+.nft-avatar img{
+    width: 40px;
+}
+.nft-creator-name{
+    display: flex;
+    align-items: center;
+}
+.nft-creator-name h2{
+    padding: 0 5px 0 0px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.nft-creator-name p{
+    padding: 0 10px 0 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--White);
+}
+
+
