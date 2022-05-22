@@ -54,19 +54,74 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+.nft-view-color{
+    visibility: hidden;
+    background-color: var(--Cyan);
+    height: 320px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    opacity: 0.5;
 
+    transition: 0.1s ease-in;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -ms-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+}
+
+.nft-view{
+    position: absolute;
+    margin: 20px;
+    height: 320px;
+    width: calc(25% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.nft-eye{
+    visibility: hidden;
+    position: absolute;
+    width:50px;
+    height: 50px;
+    transition: 0.1s ease-in;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -ms-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+}
+
+
+.nft-view:hover .nft-view-color{
+    visibility: visible;
+}
+.nft-view:hover .nft-eye{
+    visibility: visible;
+}
 .nft-image{
     width: 100%;
+    height: 360px;  
     padding: 20px;
 }
 
 .nft-image img{
     width: 100%;
-    border-radius: 10   px;
-    -webkit-border-radius: 10   px;
-    -moz-border-radius: 10   px;
-    -ms-border-radius: 10   px;
-    -o-border-radius: 10   px;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .nft-description{
@@ -74,13 +129,23 @@
     padding: 0 20px 20px 20px;
 }
 .nft-description h1{
+    display: inline-block;
+    cursor: pointer;
     font-family: 'Outfit', sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
     font-weight: 600;
     color: var(--White);
-}
 
+    transition: 0.1s ease-in;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -ms-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+}
+.nft-description h1:hover {
+    color: var(--Cyan);
+}
 .nft-description > p{
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
@@ -144,6 +209,15 @@
     font-size: 16px;
     font-weight: 400;
     color: var(--White);
-}
+    cursor: pointer;
 
+    transition: 0.1s ease-in;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -ms-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+}
+.nft-creator-name p:hover{
+    color: var(--Cyan);    
+}
 
